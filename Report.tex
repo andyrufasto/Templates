@@ -1,0 +1,76 @@
+\documentclass[15pt]{report}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{fp}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage{mathtools}
+\usepackage{media9}
+\usepackage[parfill]{parskip}
+\usepackage{pgfplots}
+\usepackage{pstricks}
+\usepackage{sectsty}
+\usepackage[]{tikz}
+\usepackage[pagestyles]{titlesec}
+\usepackage{xcolor}
+
+\definecolor{usm}{RGB}{176,153,40}
+\chapterfont{\color{usm}}  % sets colour of chapters
+\sectionfont{\color{usm}}  % sets colour of sections
+\begin{filecontents}{timeline.txt}
+::0x0 % coordinate system & y=e^x, repeated until last frame
+::1 % one blue curve per frame
+::2
+::3
+::4
+::5
+::6
+::7
+::8
+\end{filecontents}
+
+\headheight = -0.5cm
+\oddsidemargin = 0cm % margen izquierdo 4.5-2=2.5cm
+\pgfplotsset{compat=1.7}
+\textheight = 23.5cm % largo texto impreso
+\textwidth = 18cm % ancho texto impreso
+\titleformat{\chapter}[display]
+  {\normalfont \bfseries}{}{0pt}{\Large}
+\topmargin = -2cm % margen superior 3-2=1cm
+
+%RENAME
+\renewcommand{\chaptername}{\underline{Capítulo}}
+\renewcommand{\contentsname}{\color{usm}\underline{\textbf{CONTENIDO}}}
+\renewcommand{\figurename}{Figura}
+\renewcommand{\tablename}{Tabla}
+
+\title{
+        {\sc \bf \color{usm} \huge{<++>}\\ \LARGE{<++>}}
+        \\
+%        {\vfill}
+%       \\
+      {\includegraphics[scale=0.17]{unmsm.png}}
+       \\
+        {<++>}
+       \\
+        {Facultad de Ciencias Económicas}
+       }
+    \author{RUFASTO C. ANDY}
+    \date{}
+
+\begin{document}
+	\maketitle
+	\begingroup
+	\Large
+	\tableofcontents
+
+	\chapter{\color{usm}CAPITULO1}
+	%\input{<++>.tex}
+	\chapter{\color{usm}CAPILUTO2}
+		<++>
+	\endgroup
+\end{document}
+
+
