@@ -1,0 +1,310 @@
+\documentclass[10pt,a4paper]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+
+
+\author{\Lain}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\addto\captionsspanish{%
+  \renewcommand\chaptername{Problema}}
+
+ 
+\begin{document}
+\chapter{}
+Una empresa ha terminado de instalar una linera de producción a un costo total de S./3 600 000.00 y empezó a producir a inicios del 2012,Se fija su vida económica en 5 años. La proyección de la producción es la siguiente:\\
+	
+	\begin{tabular}{|c|c|c|c|c|} \hline
+	AÑO 1 & AÑO 2 & AÑO 3 & AÑO 4 & AÑO 5 \\ \hline
+	3 500 & 3 000 & 2 500 & 2 000 & 1 000 \\ \hline
+	\end{tabular}
+	
+	El año 2012 se espera vender toda la producció a un precio de S./ 2 000 cada uno, el costo de ventas sin considerar la depreciación se estima en un 40\%.Los gastos estimados para el 2012 son:\\
+	Gastos admnistrativos: S/ 450 000.00\\
+	Gastos de venta: 12\% de las ventas.\\
+	\section{Linea recta y unidades físicas}
+
+	
+	\begin{table}[h]
+	\centering
+	\caption{Depreciación en linea recta}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+	
+	Fecha   & Costo D.  & Tasa LR & V.L. Dep  & D. Anual & D. Acum   & V. Libros \\  \hline
+
+	01/2012 & 3 600 000 & -       & -         & -        & -         & 3 600 000 \\  \hline
+
+	12/2012 & -         & 0.2     & 3 600 000 & 720 000  & 720 000   & 2 880 000 \\  \hline
+
+	12/2013 & -         & 0.2     & 2 880 000 & 720 000  & 1 440 000 & 2 160 000 \\  \hline
+
+	12/2014 & -         & 0.2     & 2 160 000 & 720 000  & 2 160 000 & 1 440 000 \\  \hline
+
+	12/2015 & -         & 0.2     & 1 440 000 & 720 000  & 2 880 000 & 720 000   \\  \hline
+
+	12/2016 & -         & 0.2     & 720 000   & 720 000  & 3 600 000 & -         \\  \hline
+	\end{tabular}
+	\end{table}
+	
+	%Unidades físicas%
+	
+
+
+
+\begin{align*} 
+Unidades        &= 3500 + 3000 + 2 500 + 2000 + 1000 \\
+                &= 12000.\\
+D \times Unidad &= \dfrac{3 600 000}{12000}\\
+                &= 300.
+\end{align*}
+
+
+
+	\begin{table}[h]
+	\centering
+	\caption{Depreciación en unidades físicas}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+	
+	Fecha   & Costo D.  & $D \times Unidad$ & Unidades & D. Anual  & D. Acum   & V. Libros \\ \hline
+
+	01/2012 & 3 600 000 & -                 & -        & -         & -         & 3 600 000 \\ \hline
+
+	12/2012 & -         & 300               & 3 500    & 1 050 000 & 1 050 000 & 2 550 000 \\ \hline
+
+	12/2013 & -         & 300               & 3 000    & 900 000   & 1 950 000 & 1 650 000 \\ \hline
+
+	12/2014 & -         & 300               & 2 500    & 750 000   & 2 700 000 & 900 000   \\ \hline
+
+	12/2015 & -         & 300               & 2 000    & 600 000   & 3 300 000 & 300 000   \\ \hline
+
+	12/2016 & -         & 300               & 1 000    & 300 000   & 3 600 000 & -         \\ \hline
+	\end{tabular}
+	\end{table}
+	
+
+\begin{table}[h!]
+\centering
+\caption{Estado de Resultados comparados año 2012}
+\begin{tabular}{l|r|r} 
+                          & Linea Recta & Unid. Físicas \\ \hline
+ Ventas                   & 7 000 000   & 7 000 000     \\
+ Gastos Administrativos   & 450 000     & 450 000       \\
+ Gastos de venta          & 840 000     & 840 000       \\
+ Costos de venta          & 2 800 000   & 2 800 000     \\
+ Depreciación             & 720 000     & 1 050 000     \\ \hline
+ Ut. Bruta                & 2 190 000   & 1 860 000     \\
+ Intereses                & 150 000     & 150 000       \\ \hline
+ Util. antes de Impuestos & 2 040 000   & 1 710 000
+ 
+\end{tabular}
+
+\end{table}
+
+\newpage	%%%%Nueva página%%%%%%%%%%%%%%
+
+\section{Linea recta y doble saldo decreciente}
+	 
+	
+	
+	\begin{table}[h]
+	\centering
+	\caption{Depreciación en linea recta}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+	
+	Fecha   & Costo D.  & Tasa LR & V.L. Dep  & D. Anual & D. Acum   & V. Libros \\ \hline
+
+	01/2012 & 3 600 000 & -       & -         & -        & -         & 3 600 000 \\ \hline
+
+	12/2012 & -         & 0.2     & 3 600 000 & 720 000  & 720 000   & 2 880 000 \\ \hline
+
+	12/2013 & -         & 0.2     & 2 880 000 & 720 000  & 1 440 000 & 2 160 000 \\ \hline
+
+	12/2014 & -         & 0.2     & 2 160 000 & 720 000  & 2 160 000 & 1 440 000 \\ \hline
+
+	12/2015 & -         & 0.2     & 1 440 000 & 720 000  & 2 880 000 & 720 000   \\ \hline
+
+	12/2016 & -         & 0.2     & 720 000   & 720 000  & 3 600 000 & -         \\ \hline
+	\end{tabular}
+	\end{table}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+		\begin{table}[h]
+	\centering
+	\caption{Depreciación en Doble Saldo Decreciente}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+	
+	Fecha   & Costo D.  & Tasa DSD & V.L. Dep   & D. Anual  & D. Acum   & V. Libros \\ \hline
+
+	01/2012 & 3 600 000 & -        & -          & -         & -         & 3 600 000 \\ \hline
+
+	12/2012 & -         & 0.4      & 3 600 000  & 1 440 000 & 1 440 000 & 2 160 000 \\ \hline
+
+	12/2013 & -         & 0.4      & 2 1600 000 & 864 000   & 2 304 000 & 1 296 000 \\ \hline
+
+	12/2014 & -         & 0.4      & 1 296 000  & 518 000   & 2 822 000 & 777 600   \\ \hline
+
+	12/2015 & -         & 0.4      & 777 600    & 311 040   & 311 040   & 466 000   \\ \hline
+
+	12/2016 & -         & -        & 466 000    & 466 000   & 3 600 000 & -         \\ \hline
+	\end{tabular}
+	\end{table}
+	\begin{table}[h!]
+	\centering
+	\caption{Estado de Resultados comparados año 2012}
+	\begin{tabular}{l|r|r} 
+	                          & Linea Recta & Doble Saldo Decreciente \\ \hline
+	 Ventas                   & 7 000 000   & 7 000 000               \\
+	 Gastos Administrativos   & 450 000     & 450 000                 \\
+	 Gastos de venta          & 840 000     & 840 000                 \\
+	 Costos de venta          & 2 800 000   & 2 800 000               \\
+	 Depreciación             & 720 000     & 1 440 000               \\ \hline
+	 Ut. Bruta                & 2 190 000   & 1 470 000               \\
+	 Intereses                & 150 000     & 150 000                 \\ \hline
+	 Util. antes de Impuestos & 2 040 000   & 1 320 000
+ 	\end{tabular}
+	\end{table}	 
+\newpage %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{}
+Una empresa nos presenta información relativa a su compra de maquinarias y equipo siguientes dos años y nos solicita preparar una comparación de las depreciaciones, asimismo presentar los Estados de Resultados incluyendo las interpretaciones sobre los efectos de la depreciación según cada método utilizado.\\
+Costo de maquinaria S/ 1 500 000, vida económica 5 años, las unidades de producción presupuestadas son año 1: 250 000, año 2 350 000, año 3: 500 000, año 4 : 600 000, año 5: 300 00.\\
+Las ventas proyectadas son año 1:6 000 000, año 2: 5 000 000.\\
+
+EL costo de ventas sin incluir las depreciaciones equivalente al 70\% de las ventas, los gastos operativos equivalentes  al 10\% de las ventas de cada año respectivamente.\\
+
+Los intereses ascienden a 50 000 anualmente. No hay datos sobre amortizaciones de deuda.\\
+
+\section{Linea recta y Doble saldo decreciente}
+	\begin{table}[h]
+	\centering
+	\caption{Depreciación en linea recta}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+	
+	Fecha    & Costo D.  & Tasa LR & V.L. Dep  & D. Anual & D. Acum & V. Libros \\ \hline
+
+	01/$x_1$ & 1 500 000 & -       & -         & -        & -       & 1 500 000 \\ \hline
+
+	12/$x_1$ & -         & 0.2     & 1 500 000 & 300 000  & 300 000 & 1 200 000 \\ \hline
+
+	12/$x_2$ & -         & 0.2     & 1 500 000 & 300 000  & 600 000 & 900 000   \\ \hline
+	
+
+	\end{tabular}
+	\end{table}
+	
+		\begin{table}[h]
+	\centering
+	\caption{Depreciación en Doble Saldo Decreciente}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+	
+	Fecha    & Costo D.  & Tasa DSD & V.L. Dep  & D. Anual & D. Acum & V. Libros \\ \hline
+
+	01/$x_1$ & 1 500 000 & -        & -         & -        & -       & 1 500 000 \\ \hline
+
+	12/$x_1$ & -         & 0.4      & 1 500 000 & 600 000  & 600 000 & 900 000   \\ \hline
+
+	12/$x_2$ & -         & 0.4      & 900 000   & 360 000  & 960 000 & 540 000   \\ \hline
+	
+	
+	\end{tabular}
+	\end{table}
+	\begin{table}[h!]
+	\centering
+	\caption{Estado de Resultados comparados años $x_1$ y $x_2$}
+	\begin{tabular}{l|r|r||r|r} 
+	                          & LR $(x_1)$ & DSD($x_1$) & LR $(x_2)$ & DSD ($x_2$) \\ \hline
+	 Ventas                   & 6 000 000  & 6 000 000  & 5 000 000  & 5 000 000   \\
+	 Gastos Operativos        & 600 000    & 600 000    & 500 000    & 500 000     \\
+	 Costos de venta          & 4 200 000  & 4 200 000  & 3 500 000  & 3 500 000   \\
+	 Depreciación             & 300 000    & 600 000    & 300 000    & 360 000     \\ \hline
+	 Ut. Bruta                & 900 000    & 600 000    & 700 000    & 640 000     \\
+	 Intereses                & 50 000     & 50 000     & 50 000     & 50 000      \\ \hline
+	 Util. antes de Impuestos & 850 000    & 550 000    & 650 000    & 590 000
+ 	\end{tabular}
+	\end{table}
+		 
+\newpage%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Linea recta y Sumatoria de los dígitos de los años}	
+	\begin{table}[h]
+	\centering
+	\caption{Depreciación en linea recta}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+	
+	Fecha    & Costo D.  & Tasa LR & V.L. Dep  & D. Anual & D. Acum   & V. Libros \\ \hline
+
+	01/$x_1$ & 1 500 000 & -       & -         & -        & -         & 1 500 000 \\ \hline
+
+	12/$x_1$ & -         & 0.2     & 1 500 000 & 300 000  & 300 000   & 1 200 000 \\ \hline
+
+	12/$x_2$ & -         & 0.2     & 1 500 000 & 300 000  & 600 000   & 900 000   \\ \hline
+
+	12/$x_3$ & -         & 0.2     & 1 500 000 & 300 000  & 900 000   & 600 000   \\ \hline
+
+	12/$x_4$ & -         & 0.2     & 1 500 000 & 300 000  & 1 200 000 & 300 000   \\ \hline
+
+	12/$x_5$ & -         & 0.2     & 1 500 000 & 300 000  & 1 500 000 & -         \\ \hline
+
+	\end{tabular}
+	\end{table}
+
+\begin{table}[h]
+	\centering
+	\caption{Depreciación en SDA}	
+	
+	\begin{tabular}{|c|c|c|c|c|c|c|} \hline
+	
+	Fecha    & Costo D.  & Tasa SDA & V.L. Dep  & D. Anual & D. Acum   & V. Libros \\ \hline
+
+	01/$x_1$ & 1 500 000 & -        & -         & -        & -         & 1 500 000 \\ \hline
+
+	12/$x_1$ & -         & 0.3333   & 1 500 000 & 500 000  & 500 000   & 1 000 000 \\ \hline
+
+	12/$x_2$ & -         & 0.2667   & 1 500 000 & 400 000  & 900 000   & 600 000   \\ \hline
+
+	12/$x_3$ & -         & 0.2000   & 1 500 000 & 300 000  & 1 200 000 & 300 000   \\ \hline
+
+	12/$x_4$ & -         & 0.1333   & 1 500 000 & 200 000  & 1 400 000 & 100 000   \\ \hline
+
+	12/$x_5$ & -         & 0.0667   & 1 500 000 & 100 000  & 1 500 000 & -         \\ \hline
+
+	\end{tabular}
+	\end{table}
+	
+	\begin{table}[h!]
+	\centering
+	\caption{Estado de Resultados comparados años $x_1$ y $x_2$}
+	\begin{tabular}{l|r|r||r|r} 
+	                          & LR $(x_1)$ & SDA($x_1$) & LR $(x_2)$ & SDA ($x_2$) \\ \hline
+	 Ventas                   & 6 000 000  & 6 000 000  & 5 000 000  & 5 000 000   \\
+	 Gastos Operativos        & 600 000    & 600 000    & 500 000    & 500 000     \\
+	 Costos de venta          & 4 200 000  & 4 200 000  & 3 500 000  & 3 500 000   \\
+	 Depreciación             & 300 000    & 500 000    & 300 000    & 400 000     \\ \hline
+	 Ut. Bruta                & 900 000    & 700 000    & 700 000    & 600 000     \\
+	 Intereses                & 50 000     & 50 000     & 50 000     & 50 000      \\ \hline
+	 Util. antes de Impuestos & 850 000    & 650 000    & 650 000    & 550 000
+ 	\end{tabular}
+	\end{table}	
+	
+\newpage %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{}
+Una empresa está por comprar una maquinaria cuyo costo total asciende a S/ 4 000 000 y su vida util proyectada es 5 años.
+
+
+	
+\end{document}
